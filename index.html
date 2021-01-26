@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Bootstrap 世界上最受歡迎的框架用於建立響應式、行動優先的網站，透過 BootstrapCDN 和範本初學頁面開始吧。">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Jekyll v3.8.5">
+
+		<title>發公告</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link href="bootstrap.css" rel="stylesheet">
+		<style>
+		  .bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+		  }
+
+		  @media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+			  font-size: 3.5rem;
+			}
+		  }
+		</style>
+		<!-- Custom styles for this template -->
+		<link href="floating-labels.css" rel="stylesheet">
+		
+	</head>
+	<body>
+		
+		<form class="form-signin">
+  <div class="text-center mb-4">
+    <img class="mb-4" src="top.jpg" alt="" width="50%" height="auto">
+    <h1 class="h3 mb-3 font-weight-normal">芝心小組發公告</h1>
+    <p></a></p>
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" id="newFriend" class="form-control" placeholder="新朋友名字" required autofocus>
+    <label for="newFriend">新朋友名字</label>
+  </div>
+  <button class="btn btn-lg btn-secondary btn-block" type="button" onclick="testFn()">測試</button>
+  <br/>
+  <button class="btn  btn-primary btn-block" type="button" onclick="sendFn()">正式推播</button>
+  <p class="mt-5 mb-3 text-muted text-center">&copy; 2022 芝心小組</p>
+</form>
+
+		
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		
+		<script>
+		//代禱群
+		
+		function sendFn(){
+			key = 'q5iGHAjHEuvHkCxtaAyhOVB4mTHymGjse7j8UreFNAI'; //代禱
+			url = 'https://script.google.com/macros/s/AKfycbwZA_0jqFD5V2WRYumw0nZf6BwiJ7egEFa19Vw344fmsuBSYu3C71s/exec?key='+key+'&name='+$("#newFriend").val();
+			window.open(url, '_blank');
+			
+		}
+		function testFn(){
+			var key = 'CBWHd5bR8LXheicdYlElwQT4NHVG5jyCjd6Mx6b9c0M'; //中斷點
+			url = 'https://script.google.com/macros/s/AKfycbwZA_0jqFD5V2WRYumw0nZf6BwiJ7egEFa19Vw344fmsuBSYu3C71s/exec?key='+key+'&name='+$("#newFriend").val();
+			window.open(url, '_blank');
+		}
+		
+		
+		
+		
+		
+		
+		</script>
+	
+	
+	</body>	
+
+</html>
